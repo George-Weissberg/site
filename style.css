@@ -1,0 +1,194 @@
+/* Estilo do corpo da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212; /* Cor de fundo cinza quase preto */
+    color: white; /* Cor do texto */
+    background-image: url('background.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
+    overflow-x: hidden;
+}
+
+
+/* Estilo do cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: black;
+    color: white;
+    padding: 15px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo da logo */
+.logo h1 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilo da navegação */
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Ícones e botões do topo */
+.top-icons {
+    display: flex;
+    align-items: center;
+}
+
+.top-icons a img {
+    width: 24px;
+    margin: 0 8px;
+}
+
+.btn-assine, .btn-login {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+    padding: 8px 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-assine:hover, .btn-login:hover {
+    background: white;
+    color: black;
+}
+
+/* Estilo do conteúdo principal */
+.posts {
+    text-align: center;
+    margin: 50px 0;
+}
+
+/* Estilo da grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.post {
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Texto dentro do post */
+.post p {
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Botão de ver mais */
+.ver-mais {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Link para o post */
+.post-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+/* Estilos específicos para a página de post */
+.main-post {
+    padding: 40px;
+    background-color: #121212; /* Fundo cinza quase preto para o post */
+}
+
+.post-title h1 {
+    font-size: 3em;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.cotistas {
+    color: #ff4500; /* Cor para "COTISTAS" */
+}
+
+.nao-cotistas {
+    color: #00bfff; /* Cor para "E NÃO COTISTAS" */
+}
+
+
+.post-content p {
+    max-width: 1000px; /* Define uma largura máxima para o texto */
+    margin: 0 auto; /* Centraliza o texto dentro da div */
+    padding: 20px; /* Mantém espaçamento interno para melhor leitura */
+    font-size: 18px; /* Ajuste o tamanho conforme necessário */
+    text-align: justify; /* Opcional: justifica o texto para melhorar a leitura */
+    line-height: 2
+}
+
+.post-content {
+    background: rgba(0, 0, 0, 0.6); /* Cor preta com 60% de transparência */
+    /*max-width: 800px;   Define uma largura máxima */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+
+.post-image {
+    display: block; /* Garante que a imagem fique separada do texto */
+    max-width: 70%; /* Garante que a imagem não ultrapasse os limites da tela */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 20px auto; /* Adiciona espaçamento acima e abaixo e centraliza a imagem */
+    border-radius: 10px; /* Opcional: adiciona cantos arredondados */
+}
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #121212;
+    color: white;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+
+
