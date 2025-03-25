@@ -44,8 +44,16 @@
 
                 <img src="enem.png" alt="Descrição da imagem" class="post-image">
 
-            <p> Dados duas amostras aleatórias X e Y, se X e Y são normalmente distribuídos \( X \sim N(\mu_X,\sigma_X^2) \)
-                e \( Y \sim N(\mu_Y,\sigma_Y^2)\) então X-Y é normalmente distribuído \(X-Y\sim N(\mu_X-\mu_Y)\).</p>
+            <p> Dados duas amostras aleatórias \(X_1,X_2,...,X_{n_1}\) e \(Y_1,Y_2,...,Y_{n_2}\), se \(X_i\) e \(Y_i\) são 
+                normalmente distribuídos, \( X_i \sim N(\mu_X,\sigma_X^2) \) e \( Y_i \sim N(\mu_Y,\sigma_Y^2)\) então a média 
+                das amostras aleatórias também são normalmente distribuídas \( \bar{X} \sim N(\mu_X,\frac{\sigma_X^2}{n_1}) \) e 
+                \( \bar{Y} \sim N(\mu_Y,\frac{\sigma_Y^2}{n_2}) \). 
+                
+                A diferença entre as médias também são normalmente distribúidas 
+                \[
+                \bar{X}-\bar{Y}\sim N\left(\mu_X-\mu_Y,\frac{\sigma_X^2}{n_1}+\frac{\sigma_Y^2}{n_2}\right).
+                \]
+            </p>
 
         </section>
     </main>
