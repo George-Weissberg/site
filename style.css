@@ -154,7 +154,7 @@ nav ul li a:hover {
 
 
 .post-content p {
-    max-width: 1000px; /* Define uma largura máxima para o texto */
+    max-width: 9000px; /* Define uma largura máxima para o texto */
     margin: 0 auto; /* Centraliza o texto dentro da div */
     padding: 20px; /* Mantém espaçamento interno para melhor leitura */
     font-size: 18px; /* Ajuste o tamanho conforme necessário */
@@ -172,7 +172,7 @@ nav ul li a:hover {
 
 .post-image {
     display: block; /* Garante que a imagem fique separada do texto */
-    max-width: 70%; /* Garante que a imagem não ultrapasse os limites da tela */
+    max-width: 50%; /* Garante que a imagem não ultrapasse os limites da tela */
     height: auto; /* Mantém a proporção da imagem */
     margin: 20px auto; /* Adiciona espaçamento acima e abaixo e centraliza a imagem */
     border-radius: 10px; /* Opcional: adiciona cantos arredondados */
