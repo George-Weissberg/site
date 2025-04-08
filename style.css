@@ -22,12 +22,14 @@ header {
     color: white;
     padding: 15px 20px;
     font-family: Arial, sans-serif;
+    flex-wrap: wrap; /* Permite quebra de linha */
 }
 
 /* Estilo da logo */
 .logo h1 {
     font-size: 24px;
     font-weight: bold;
+    
 }
 
 /* Estilo da navegação */
@@ -154,7 +156,7 @@ nav ul li a:hover {
 
 
 .post-content p {
-    max-width: 9000px; /* Define uma largura máxima para o texto */
+    max-width: 900px; /* Define uma largura máxima para o texto */
     margin: 0 auto; /* Centraliza o texto dentro da div */
     padding: 20px; /* Mantém espaçamento interno para melhor leitura */
     font-size: 18px; /* Ajuste o tamanho conforme necessário */
@@ -178,6 +180,12 @@ nav ul li a:hover {
     border-radius: 10px; /* Opcional: adiciona cantos arredondados */
 }
 
+.dashboard{
+    margin: auto;
+    text-align: center;
+    max-width: 100%;
+}
+
 
 /* Rodapé */
 footer {
@@ -192,3 +200,54 @@ footer {
 
 
 
+/* Responsividade para telas menores */
+@media screen and (max-width: 768px) {
+    /* Ajuste no header */
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .top-icons {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .btn-assine, .btn-login {
+        width: 100%;
+        text-align: center;
+        margin-top: 5px;
+    }
+
+    /* Ajuste no grid de posts */
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr); /* 1 coluna no mobile */
+        gap: 10px;
+    }
+
+    .post {
+        height: 150px; /* Reduz um pouco a altura no mobile */
+    }
+
+    .post p {
+        font-size: 14px; /* Diminui o tamanho do texto nos posts */
+    }
+
+    /* Ajuste no footer */
+    footer {
+        font-size: 14px;
+        padding: 15px;
+    }
+}
