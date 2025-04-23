@@ -1,11 +1,11 @@
 /* Estilo do corpo da página */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #121212; /* Cor de fundo cinza quase preto */
     color: white; /* Cor do texto */
-    background-image: url('background.png'); /* Substitua pelo caminho da sua imagem */
+    background-image: url('front_figures_home/Background.png'); /* Substitua pelo caminho da sua imagem */
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Mantém a imagem fixa ao rolar a página */
@@ -60,11 +60,11 @@ nav ul li a:hover {
 }
 
 .top-icons a img {
-    width: 24px;
+    width: 36px;
     margin: 0 8px;
 }
 
-.btn-assine, .btn-login {
+.btn-assine {
     background: transparent;
     border: 2px solid white;
     color: white;
@@ -74,7 +74,7 @@ nav ul li a:hover {
     font-weight: bold;
 }
 
-.btn-assine:hover, .btn-login:hover {
+.btn-assine:hover {
     background: white;
     color: black;
 }
